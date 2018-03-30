@@ -1,19 +1,23 @@
 // Business Logic
 var beepBoop = function(input) {
-  var inputArray = input.toString().split("");
+// debugger;
+  var beepBoopResult = "";
+  var countTo = parseInt(input);
   if (input % 3 === 0 && input !== 0) {
-    return "I'm sorry, Dave. I'm afraid I can't do that."
-  } else if (input % 3 !== 0) {
-    for (var index = 0; index < inputArray.length; index ++)
-      // var indexValue = parseInt(inputArray[i]);
-      // if
-    return "Boop!";
+    beepBoopResult +=  "I'm sorry, Dave. I'm afraid I can't do that."
+  } else if (input === 1) {
+      beepBoopResult += "Boop!";
   } else if (input === 0){
-    return "Beep!";
+      beepBoopResult += "Beep!";
+    } else {
+      for (index=0; index <= countTo; index++) {
+        beepBoopResult = beepBoopResult + index + " ";
+      }
+    }
+    return beepBoopResult;
   }
 
-};
-
+  // var inputArray = input.toString().split("");
 
 
 
