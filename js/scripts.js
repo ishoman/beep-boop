@@ -4,7 +4,10 @@ var beepBoop = function(input) {
     return "Beep!";
   } else if (input === 1) {
     return "Boop!";
+  } else if (input % 3 === 0){
+    return "I'm sorry, Dave. I'm afraid I can't do that."
   }
+
 };
 
 
