@@ -1,16 +1,21 @@
 // Business Logic
-
+var beepBoop = function(input) {
+  if (input === 0) {
+    return "Beep!"
+  }
+};
 
 
 
 
 
 // User Interface Logic
-$(document).ready(function( {
-  $("form#numberInput").submit(function(event){
-    var input = $("#input").val();
-    var output = beepBoop(input);
-    $("#result").text(output);
+$(document).ready(function() {
+  $("#numberInput").submit(function(event){
     event.preventDefault();
+    var input = $("#input").val();
+    console.log(input);
+    var output = beepBoop(input);
+    $("#result").text(beepBoop);
   });
 });
