@@ -6,11 +6,23 @@
     <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Beep! Boop!</title>
   </head>
   <body>
     <div class="container">
-      <h1>this is a template</h1>
+      <h1>Beep! Boop!</h1>
+      <form id="numberInput">
+        <div class="form-group">
+          <label for="input">Enter a number and see what happens!:</label>
+          <input id="input" type="text" pattern="[0-9]*">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Find out!</button>
+      </form>
+
+      <div id="result">
+
+      </div>
     </div>
   </body>
 </html>
