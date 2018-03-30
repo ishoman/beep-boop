@@ -1,7 +1,9 @@
 // Business Logic
 var beepBoop = function(input) {
   if (input === 0) {
-    return "Beep!"
+    return "Beep!";
+  } else if (input === 1) {
+    return "Boop!";
   }
 };
 
@@ -13,9 +15,6 @@ var beepBoop = function(input) {
 $(document).ready(function() {
   $("#numberInput").submit(function(event){
     event.preventDefault();
-    var input = $("#input").val();
-    console.log(input);
-    var output = beepBoop(input);
-    $("#result").text(beepBoop);
+
   });
 });
