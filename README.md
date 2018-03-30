@@ -18,6 +18,7 @@ A website created with JS and HTML that allows a user to input a number and retu
 | **If input does not contain a 1, 0, or is not divisible by 3, the program counts from 0 to the input value and returns those values in a string.  **| Input: "4" | Output: "0 1 2 3 4 " |
 | **If input contains a 0 return "Beep!"**| Input: "20" | Output: "Beep!" |
 | **If input contains a 1, return "Boop!"**| Input: "10" | Output: "Beep!" |
+| **Program is able to reverse the output.**| Input: "4" | Output: "4 3 2 1 0" |
 
 
 ## Setup/Installation Requirements
@@ -27,7 +28,7 @@ A website created with JS and HTML that allows a user to input a number and retu
 5. To edit code, open in a text editor.
 
 ## Known Bugs
-* No known bugs at this time.
+* When reversing a double digit number, the program as reverses the tens and ones places in the output. i.e. 14 = 41.
 
 ## Technologies Used
 * JS
