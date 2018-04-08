@@ -1,45 +1,28 @@
 // Business Logic
 // Main Function
 var beepBoop = function(input) {
-  var containsOne = (/[1]/g.test(input))
-  var containsZero = (/[0]/g.test(input))
-  var beepBoopResult = "";
-  var countTo = parseInt(input);
-  if (input % 3 === 0 && input !== 0) {
-    beepBoopResult +=  "I'm sorry, Dave. I'm afraid I can't do that.";
-  } else if (containsOne === true) {
-      beepBoopResult += "Boop!";
-  } else if (containsZero === true && containsOne === false) {
-      beepBoopResult += "Beep!";
-    } else {
-      for (index=0; index <= countTo; index++) {
-        beepBoopResult = beepBoopResult + index + " ";
-      }
-    }
-    return beepBoopResult;
+  debugger;
+  var beepBoopArray = [];
+  for (var index = 0; index <= input; index++) {
+    beepBoopArray.push(index);
   }
+  var outputArray = [];
+  for (var index = 0; index <= beepBoopArray.length; index++) {
+    if (beepBoopArray[index] % 3 === 0 && beepBoopArray[index] !== 0) {
+      outputArray.push(" " + "I'm sorry, Dave. I'm afraid I can't do that.");
+    } else if (beepBoopArray.includes(1)) {
+      outputArray.push(" " + "Boop!");
+    } else if (beepBoopArray.includes(0)) {
+      outputArray.push(" " + "Beep!");
+    } else {
+      outputArray.push(" " + beepBoopArray[index])
+    }
+    return outputArray;
+  }
+};
 // Function that Reverses the Output
 
-var beepBoopReverse = function(input) {
-  var containsOne = (/[1]/g.test(input))
-  var containsZero = (/[0]/g.test(input))
-  var beepBoopResult = "";
-  var countTo = parseInt(input);
-  if (input % 3 === 0 && input !== 0) {
-    beepBoopResult +=  "I'm sorry, Dave. I'm afraid I can't do that.";
-  } else if (containsOne === true) {
-      beepBoopResult += "Boop!";
-  } else if (containsZero === true && containsOne === false) {
-      beepBoopResult += "Beep!";
-    } else {
-      for (index=0; index <= countTo; index++) {
-        beepBoopResult = beepBoopResult + index + " ";
-      }
-    }
-    var beepBoopArray = beepBoopResult.split("").reverse();;
-    var beepBoopResultReverse = beepBoopArray.join("");
-    return beepBoopResultReverse;
-  }
+
 
 // User Interface Logic
 $(document).ready(function() {
