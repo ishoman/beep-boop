@@ -12,13 +12,12 @@ A website created with JS and HTML that allows a user to input a number and retu
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Program replaces 0 with "Beep!".** | User input: "0" | Output: "Beep!"|
-| **Program replaces 1 with "Boop!" ** | User input: "1" | Output: "Boop!"|
-| **If input is divisible by 3, program returns "I'm sorry, Dave. I'm afraid I can't do that."** | User input: "3" | Output: "I'm sorry, Dave. I'm afraid I can't do that."|
-| **If input does not contain a 1, 0, or is not divisible by 3, the program counts from 0 to the input value and returns those values in a string.  **| Input: "4" | Output: "0 1 2 3 4 " |
-| **If input contains a 0 return "Beep!"**| Input: "20" | Output: "Beep!" |
-| **If input contains a 1, return "Boop!"**| Input: "10" | Output: "Beep!" |
-| **Program is able to reverse the output.**| Input: "4" | Output: "4 3 2 1 0" |
+| **Program replaces 0 with "Beep!".** | User input: "0" | Output: [Beep!]|
+| **Program replaces 1 with "Boop!" ** | User input: "1" | Output: [Beep! Boop!]|
+| **Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."** | User input: "3" | Output: "Beep!, Boop!, 2, I'm sorry, Dave. I'm afraid I can't do that."|
+| **Program ignores other numbers that don't meet these **| Input: "10" | Output: "4 3 2 1 0" |
+| **Program ignores other numbers that don't meet these **| Input: "12" | Output: "Beep!, Boop!, 2, ...Boop! Boop! I'm sorry, Dave. I'm afraid I can't do that." |
+| **Program is able to reverse the output.**| Input: "4" | Output: "4, I'm sorry, Dave. I'm afraid I can't do that., 2, Boop!, Beep!" |
 
 
 ## Setup/Installation Requirements
